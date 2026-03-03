@@ -1,0 +1,54 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.dialog-content {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  animation: slideUp 0.3s ease;
+}
+
+.dialog-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.dialog-title {
+  color: var(--color-text);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.dialog-message {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.dialog-actions .btn {
+  min-width: 120px;
+}
